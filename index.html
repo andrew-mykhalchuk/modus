@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Modus Versus</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/reset.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Navbar ================================================================================= -->
+		<nav class="navbar navbar-default navbar-custom">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">MODUS <span>versus</span></a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+					<ul class="nav navbar-nav">
+						<li class="menu-active {<?php if ($pagename == 'Home') echo 'active'?>}">
+							<a href="#">Home</a>
+				        </li>
+				        <li class="{<?php if ($pagename == 'About') echo 'active'?>}">
+							<a href="#">About</a>
+				        </li>
+				        <li class="{<?php if ($pagename == 'Services') echo 'active'?>}">
+							<a href="#">Services</a>
+				        </li>
+						<li class="dropdown {<?php if ($pagename == 'Portfolio') echo 'active'?>}">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i>Portfolio</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="fa fa-angle-right"></i>Portfolio 2 column page</a>
+								</li>
+								<li><a href="#"><i class="fa fa-angle-right"></i>Portfolio 2 column page</a>
+								</li>
+								<li><a href="#"><i class="fa fa-angle-right"></i>Portfolio 2 column page</a>
+								</li>
+							</ul>
+				        </li>
+				        <li class="{<?php if ($pagename == 'Blog') echo 'active'?>}">
+							<a href="#">Blog</a>
+				        </li>
+				        <li class="{<?php if ($pagename == 'Features') echo 'active'?>}">
+							<a href="#">Features</a>
+				        </li>
+				        <li class="{<?php if ($pagename == 'Contacts') echo 'active'?>}">
+							<a href="#">Contacts</a>
+				        </li>
+				        <li>
+				        	<a href="#">
+				        		<span class="glyphicon glyphicon-search"></span>
+				        	</a>
+				        </li>
+					</ul>
+					<!--
+					<form action="script.php" class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control">
+							<button class="btn btn-default" type="submit">Submit</button>
+						</div>
+					</form>
+					-->
+				</div>
+			</div>
+		</nav>
+
+
+		<!-- Carousel ============================================================================= -->
+
+		<div id="modus-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#modus-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#modus-carousel" data-slide-to="1"></li>
+				<li data-target="#modus-carousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/slide1.jpg" alt="First slide image">
+					<div class="carousel-caption">
+						<div class="carousel-caption-align">
+							<h3>Vestibulum</h3>
+							<div class="clearfix"></div>
+							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/slide2.jpg" alt="Second slide image">
+					<div class="carousel-caption">
+						<div class="carousel-caption-align">
+							<h3>Second slide label</h3>
+							<div class="clearfix"></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/slide3.jpg" alt="Third slide image">
+					<div class="carousel-caption">
+						<div class="carousel-caption-align">
+							<h3>Third slide label</h3>
+							<div class="clearfix"></div>
+							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#modus-carousel" data-slide="prev">
+				<i class="fa fa-angle-double-left"></i>
+			</a>
+			<a class="right carousel-control" href="#modus-carousel" data-slide="next">
+				<i class="fa fa-angle-double-right"></i>
+			</a>
+		</div>
+
+		<!-- Top block ============================================================================ -->
+		
+		<div class="top-block">
+		    <div class="container">
+			    <div class="row top-heading">
+			    	<div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+		    		    <h3>Some of our top services</h3>
+		    		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, architecto alias rerum eligendi maiores iusto.</p>
+		    		 </div>
+	    		    <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+	    		    	<a class="btn-red" href="#">View more</a>
+	    		    </div>
+			    </div>
+			    <div class="row services">
+			    	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			    		<div class="sub-service">
+				    		<i class="fa fa-thumbs-o-up"></i>
+				    		<h4>Suspendisse</h4>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est repudiandae tempora tempore aperiam iste nesciunt.</p>
+				    		<a href="#" class="btn-blue">read more</a>
+			    		</div>
+			    	</div>
+			    	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			    		<div class="sub-service">
+				    		<i class="fa fa-key"></i>
+				    		<h4>Maeceanas</h4>
+				    		<p>Eos, reprehenderit, quos deserunt mollitia laudantium animi quo ab laboriosam repellendus dolor deleniti minima nam.</p>
+				    		<a href="#" class="btn-blue">read more</a>
+			    		</div>
+			    	</div>
+			    	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			    		<div class="sub-service">
+				    		<i class="fa fa-flag"></i>
+				    		<h4>Aliquam</h4>
+				    		<p>Veniam, molestiae inventore fuga minima nulla sunt laboriosam saepe ipsum quo. Et, ex praesentium tenetur.</p>
+				    		<a href="#" class="btn-blue">read more</a>
+			    		</div>
+			    	</div>
+			    	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			    		<div class="sub-service">
+				    		<i class="fa fa-flask"></i>
+				    		<h4>Habitasse</h4>
+				    		<p>At, vero, quis reiciendis in alias quo sint ducimus sequi. Libero unde ab tempore porro.</p>
+				    		<a href="#" class="btn-blue">read more</a>
+			    		</div>
+			    	</div>
+			    </div>
+		    </div>
+		</div>
+
+		<!-- Mid block ============================================================================== -->
+		
+		<div class="mid-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<h2>Why modus versus?</h2>
+						<p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 img-window">
+						<div class="col-lg-4 col-md-4 col-sm-4 pull-left item1 img-sm">
+							<div class="circles">
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+							</div>
+							<span class="rect"></span>
+							<img class="img-responsive" src="http://placehold.it/380x215/62b9b0" alt="image">
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 pull-right item3 img-sm">
+							<div class="circles">
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+							</div>
+							<span class="rect"></span>
+							<img class="img-responsive" src="http://placehold.it/380x215/62b9b0" alt="image">
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 item2 img-lg">
+							<div class="circles">
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+								<i class="fa fa-circle"></i>
+							</div>
+							<span class="rect"></span>
+							<img class="img-responsive" src="http://placehold.it/580x315/7f8c8c" alt="image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom white =========================================================================== -->
+
+		<div class="bottom-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<h3>Why Choose Us?</h3>
+						<ul>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Quisque at massa ipsum</a>
+							</li>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Maecenas a lorem augue, egestas</a>
+							</li>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Cras vitae felis at lacus eleifend</a>
+							</li>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Etiam auctor diam pellentesque</a>
+							</li>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Nulla ac massa at dolor</a>
+							</li>
+							<li>
+								<i class="fa fa-arrow-right"></i>
+								<a href="#">Condimentum eleifend vitae vitae</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 graphs">
+						<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								<span class="sr-only">40% Complete (success)</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								<span class="sr-only">20% Complete</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								<span class="sr-only">60% Complete (warning)</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								<span class="sr-only">80% Complete</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<h3>What Clients Say?</h3>
+
+						<div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="placeholder"></div>
+									<div class="carousel-caption">
+										<div class="carousel-caption-align">
+											<h4>John Doe</h4>
+											<div class="clearfix"></div>
+											<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="placeholder"></div>
+									<div class="carousel-caption">
+										<div class="carousel-caption-align">
+											<h4>Second slide label</h4>
+											<div class="clearfix"></div>
+											<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="placeholder"></div>
+									<div class="carousel-caption">
+										<div class="carousel-caption-align">
+											<h4>Third slide label</h4>
+											<div class="clearfix"></div>
+											<p>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+				<div class="row clients">
+					<div class="col-lg-2 col-md-2 col-sm-2">
+						<h3>Our Happy Clients</h3>
+					</div>
+					<div class="col-lg-10 col-md-10 col-sm-10">
+						<div class="divider col-lg-10 col-md-10 col-sm-10"></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 pull-right">
+							<a class=" carousel-control" href="#testimonials-carousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a class=" carousel-control" href="#testimonials-carousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row brands">
+					<ul>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+						<li class="col-lg-2 col-md-2 col-sm-2"><span></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom green =========================================================================== -->
+
+		<div class="bottom-green">
+			<div class="container">
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="row">
+						<a href="#" class="navbar-brand">MODUS <span>versus</span></a>
+					</div>
+					<div class="row">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+					</div>
+					<address class="row">
+						<abbr title="Phone">Phone:</abbr> <span>182 2569 5896</span><br>
+						<abbr title="Email">e-mail:</abbr> <span>info@modus.versus</span><br>
+		            </address>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<h5>Company</h5>
+					<ul class="company_menu">
+						<li><i class="fa fa-angle-right"></i><a href="#">About</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">FAQ</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Contact</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Terms</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Privacy</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Testimonials</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2">
+					<h5>Community</h5>
+					<ul class="community_menu">
+						<li><i class="fa fa-angle-right"></i><a href="#">Blog</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Forum</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Support</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Newsletter</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 the_blog">
+					<h5><span>from the</span> BLOG</h5>
+					<ul>
+						<li>
+							<i class="fa fa-picture-o"></i>
+							<a href="#">some text</a>
+							<p class="date">26 May, 2014</p>
+						</li>
+						<li>
+							<i class="fa fa-picture-o"></i>
+							<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+							<p class="date">26 May, 2014</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- Footer ================================================================================= -->
+		<footer>
+			<div class="container">
+				<p class="col-lg-3 col-md-3 col-sm-3">2013  ModusVersus</p>
+				<ul class="pull-right">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+
+
+
+		<!-- Social ================================================================================= -->
+
+
+	</body>
+</html>
+
+
+
